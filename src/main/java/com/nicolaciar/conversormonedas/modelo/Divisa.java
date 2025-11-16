@@ -1,4 +1,5 @@
 package com.nicolaciar.conversormonedas.modelo;
 
-public record Divisa(String codigo) {
+public enum Divisa {
+    ARS, USD, COP, BRL
 }
