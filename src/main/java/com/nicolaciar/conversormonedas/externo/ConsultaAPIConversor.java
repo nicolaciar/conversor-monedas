@@ -29,7 +29,7 @@ public class ConsultaAPIConversor implements Conversor{
         }
 
         String url = "https://v6.exchangerate-api.com/v6/" + apiKey + "/pair/"
-                + desde.codigo() + "/" + hacia.codigo();
+                + desde + "/" + hacia;
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
                 .GET()
@@ -39,7 +39,6 @@ public class ConsultaAPIConversor implements Conversor{
             HttpResponse<String> response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
             String json = response.body();
-            System.out.println(json);
             TasaDeCambioDto tasaDto = gson.fromJson(json, TasaDeCambioDto.class);
             return new TasaDeCambio(tasaDto.conversion_rate());
         } catch (IOException | InterruptedException e) {
