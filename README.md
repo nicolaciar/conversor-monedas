@@ -3,6 +3,7 @@
 
 # Conversor de Monedas 💱
 
+
 Aplicación de consola desarrollada en Java que permite convertir montos entre diferentes divisas utilizando la API **ExchangeRate API**.  
 Este proyecto fue creado como parte de un challenge para practicar:
 
@@ -17,9 +18,9 @@ Este proyecto fue creado como parte de un challenge para practicar:
 - Uso de variables de entorno con **Dotenv**
     
 
----
 
 ## 🚀 Características
+
 
 - Conversión entre varias monedas (USD, ARS, BRL, COP)
     
@@ -32,9 +33,10 @@ Este proyecto fue creado como parte de un challenge para practicar:
 - Manejo seguro de la API Key mediante `.env`
     
 
----
+
 
 ## 📦 Arquitectura del proyecto
+
 
 El proyecto está dividido en capas para favorecer la modularidad y el desac acoplamiento:
 
@@ -59,9 +61,10 @@ com.nicolaciar.conversormonedas
       └── TasaDeCambioDto.java   → DTO del JSON recibido desde la API
 ```
 
----
+
 
 ## 🌐 API utilizada
+
 
 Este proyecto usa la API de:
 
@@ -90,9 +93,10 @@ Respuesta típica:
 }
 ```
 
----
+
 
 ## 🔐 Configuración del archivo `.env`
+
 
 Para proteger tu API key, este proyecto usa **Dotenv**.
 
@@ -103,9 +107,10 @@ API_KEY_CONVERSOR=TU_API_KEY_AQUI
 ```
 
 
----
+
 
 ## ▶️ Cómo ejecutar el proyecto
+
 
 1. Clonar el repositorio:
     
@@ -127,9 +132,10 @@ o si usás IntelliJ:
 
 **Run → Run 'Principal'**
 
----
+
 
 ## 🤖 Dependencias
+
 
 En el `pom.xml` se usan:
 
@@ -158,9 +164,10 @@ Para agregar estas dependencias, pegar lo siguiente en el `pom.xml`:
 </dependencies>
 ```
 
----
+
 
 ## 🧪 Ejemplo de uso
+
 
 ```
 *************************************
@@ -190,14 +197,14 @@ Salida:
 10.00 [USD] equivalen a 14050.00 [ARS]
 ```
 
----
+
 
 ## 🧑‍💻 Autor
 
 **Nicolas Laciar**  
 Estudiante de Ciencias de la Computación | Desarrollador Backend Jr
 
----
+
 
 ## 📄 Licencia
 
